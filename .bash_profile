@@ -1,0 +1,5 @@
+alias ls='ls -G'
+alias lsd='ls -alh'
+alias ..='cd ..'
+alias vims='vim -S'
+alias c='clear'
