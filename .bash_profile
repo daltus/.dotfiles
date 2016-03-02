@@ -17,6 +17,9 @@ export EDITOR=vim
 # git aliases
 alias glg="git log --oneline --abbrev-commit --all --graph --decorate"
 
+# git completion, assumes this .dotfiles repo is in the home directory
+source ~/.dotfiles/git-completion.bash
+
 # Go environment
 # export PATH=$PATH:/usr/local/go/bin
 
