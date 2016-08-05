@@ -12,9 +12,9 @@ set showcmd
 set cursorline
 set showmatch
 
-set textwidth=79
+set textwidth=99
 set formatoptions+=t
-set colorcolumn=80
+set colorcolumn=100
 
 syntax on
 syntax enable
