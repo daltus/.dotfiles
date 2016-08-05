@@ -53,14 +53,12 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-try
-    colorscheme solarized
-catch
-endtry
-
-set background=dark
-
-
 " set filetype for arduino code files to be c++
 " https://medium.com/@jayfajardo/setting-up-vim-for-arduino-66a90706b5ec
 au BufRead,BufNewFile *.ino,*.pde set filetype=c++
+
+set background=dark
+try
+  colorscheme solarized
+catch
+endtry
