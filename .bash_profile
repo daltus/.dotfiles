@@ -15,8 +15,9 @@ alias vims='vim -S'
 export EDITOR=vim
 
 # git aliases
-alias glg="git log --oneline --abbrev-commit --all --graph --decorate"
+alias glg="git log --oneline --all --graph --decorate"
 alias gs="git status"
+alias gd="git diff"
 
 # git completion
 source ~/.dotfiles/git-completion.bash
