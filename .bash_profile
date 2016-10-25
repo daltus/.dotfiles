@@ -18,6 +18,8 @@ export EDITOR=vim
 alias glg="git log --oneline --all --graph --decorate"
 alias gs="git status"
 alias gd="git diff"
+alias gb="git branch"
+alias gco="git checkout"
 
 # git completion
 source ~/.dotfiles/git-completion.bash
