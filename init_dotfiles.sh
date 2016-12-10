@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 curdir=${PWD##*/}
 
@@ -12,11 +12,11 @@ file=".vimrc"
 echo "Overwriting ~/$file"
 cp $file ~/$file
 
-file=".bash_profile"
+file=".gitconfig"
 echo "Overwriting ~/$file"
 cp $file ~/$file
 
-file=".gitconfig"
+file=".bash_profile"
 echo "Overwriting ~/$file"
 cp $file ~/$file
 
