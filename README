@@ -1,7 +1,8 @@
 TODO prettify
 
 clone into ~
-run .dotfiles/init_dotfiles.sh
+cd into .dotfiles
+run ./init_dotfiles.sh
 
 optional:
 make ~/.bash_profile_local for machine/company specific config (source ~/.bash_profile after)
