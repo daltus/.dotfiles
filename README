@@ -1,7 +1,13 @@
 TODO prettify
 
+Purpose:
+Initialize bash, vim, and git configs on a new machine.
+Specifically, the init script will overwrite the .bash_profile, .vimrc, and .gitconfig files in the
+user's home directory.
+
+Instructions:
 clone into ~
-cd into .dotfiles
+cd into .dotfiles directory
 run ./init_dotfiles.sh (uses bash)
 
 optional:
