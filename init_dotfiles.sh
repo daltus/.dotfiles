@@ -16,6 +16,10 @@ file=".bash_profile"
 echo "Overwriting ~/$file"
 cp $file ~/$file
 
+file=".gitconfig"
+echo "Overwriting ~/$file"
+cp $file ~/$file
+
 echo "Sourcing ~/$file"
 source ~/$file
 
