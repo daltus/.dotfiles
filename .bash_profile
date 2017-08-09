@@ -10,6 +10,7 @@ alias lsd="ls -alh"
 alias psdl="ps auxwww | less"
 alias c='clear'
 alias vims='vim -S'
+alias prettyjson='python_pretty_json'
 
 # Editor of choice
 export EDITOR=vim
@@ -24,6 +25,10 @@ alias gco="git checkout"
 # git completion
 source ~/.dotfiles/git-completion.bash
 
+# helper functions
+function python_pretty_json() {
+  cat $1 | python -m json.tool
+}
 
 #####################
 # from ezprompt.net #
