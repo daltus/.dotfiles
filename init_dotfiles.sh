@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 curdir=${PWD##*/}
 
@@ -9,6 +9,10 @@ if [ $curdir != ".dotfiles" ]
 fi
 
 file=".vimrc"
+echo "Overwriting ~/$file"
+cp $file ~/$file
+
+file=".gitconfig"
 echo "Overwriting ~/$file"
 cp $file ~/$file
 

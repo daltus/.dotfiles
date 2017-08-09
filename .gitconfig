@@ -1,0 +1,9 @@
+[user]
+	name = daltus
+	email = dpetursson@gmail.com
+[core]
+	editor = vim
+[credential]
+	username = daltus
+[push]
+  default = simple
