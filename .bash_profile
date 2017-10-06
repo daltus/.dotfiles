@@ -5,7 +5,9 @@
 
 # config for things specific to a company or machine, placed at end to allow
 # overrides
-source ~/.bash_profile_local
+if [ -f ~/.bash_profile_local ]; then
+  source ~/.bash_profile_local
+fi
 
 # source bash config file for non-login, interactive shells
 if [ -f ~/.bashrc ]; then

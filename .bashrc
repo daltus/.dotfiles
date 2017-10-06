@@ -89,5 +89,7 @@ export PS1="\[\e[34m\]\d\[\e[m\] \[\e[34m\]\t\[\e[m\] \[\e[35m\]\u\[\e[m\]\[\e[3
 
 # config for things specific to a company or machine, placed at end to allow
 # overrides
-source ~/.bashrc_local
+if [ -f ~/.bashrc_local ]; then
+  source ~/.bashrc_local
+fi
 
