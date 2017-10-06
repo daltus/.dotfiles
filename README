@@ -3,8 +3,8 @@ TODO prettify
 
 Purpose:
 Initialize bash, vim, and git configs on a new machine.
-Specifically, the init script will overwrite the .bash_profile, .vimrc, and .gitconfig files in the
-user's home directory.
+Specifically, the init script will overwrite the .bash_profile, .bashrc, .vimrc, and .gitconfig
+files in the user's home directory.
 
 Instructions:
 clone into ~
@@ -12,6 +12,16 @@ cd into .dotfiles directory
 run ./init_dotfiles.sh (uses bash)
 
 optional:
-make ~/.bash_profile_local for machine/company specific config
+make ~/.bash_profile_local and ~/.bashrc_local for machine/company specific config
+  run ./init_dotfiles.sh to source _local config files
 install vim package manager
 install vim solarized colorscheme
+
+Override Heirarchy:
+(low priority, gets overridden)
+.bash_profile
+.bash_profile_local
+.bashrc
+.bashrc_local
+(high priority, overrides)
+

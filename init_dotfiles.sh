@@ -16,6 +16,10 @@ file=".gitconfig"
 echo "Overwriting ~/$file"
 cp $file ~/$file
 
+file=".bashrc"
+echo "Overwriting ~/$file"
+cp $file ~/$file
+
 file=".bash_profile"
 echo "Overwriting ~/$file"
 cp $file ~/$file
