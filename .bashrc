@@ -22,6 +22,8 @@ alias gs="git status"
 alias gd="git diff"
 alias gb="git branch"
 alias gco="git checkout"
+alias gp = "git pull"
+alias gpsu = "git pull && git submodule update"
 
 # git completion
 source ~/.dotfiles/git-completion.bash
