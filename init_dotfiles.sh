@@ -1,5 +1,13 @@
 #!/bin/bash
 
+curdir=${PWD##*/}
+
+if [ $curdir != ".dotfiles" ]
+	then
+		echo "This script should be run from inside the .dotfiles directory. Exiting."
+		exit
+fi
+
 file=".vimrc"
 echo "Overwriting ~/$file"
 cp $file ~/$file
