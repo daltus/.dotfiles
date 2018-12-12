@@ -84,7 +84,7 @@ function parse_git_dirty {
 	fi
 }
 
-export PS1="\[\e[34m\]\d\[\e[m\] \[\e[34m\]\t\[\e[m\] \[\e[35m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]:\[\e[31m\]\W\[\e[m\]\[\e[36m\]\`parse_git_branch\`\[\e[m\] $ "
+export PS1="\[\e[32m\]\d\[\e[m\] \[\e[32m\]\t\[\e[m\] \[\e[31m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[34m\]:\[\e[m\]\w\[\e[35m\]\`parse_git_branch\`\[\e[m\] \\$ "
 
 # end ezprompt.net #
 ####################
