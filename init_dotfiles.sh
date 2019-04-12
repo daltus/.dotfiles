@@ -8,6 +8,14 @@ if [ $curdir != ".dotfiles" ]
 		exit
 fi
 
+file="git-completion.bash"
+echo "curl'ing $file from master branch in git's github repo."
+curl "https://raw.githubusercontent.com/git/git/v2.17.1/contrib/completion/$file" -o $file
+
+file="git-prompt.sh"
+echo "curl'ing $file from master branch in git's github repo."
+curl "https://raw.githubusercontent.com/git/git/v2.17.1/contrib/completion/$file" -o $file
+
 file=".vimrc"
 echo "Overwriting ~/$file"
 cp $file ~/$file
