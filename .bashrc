@@ -22,6 +22,7 @@ alias glg="git log --oneline --all --graph --decorate"
 alias gs="git status"
 alias gd="git diff"
 alias gb="git branch"
+alias gbs="gb --sort=-committerdate" # DESC
 alias gco="git checkout"
 alias gp="git pull"
 alias gpsu="git pull && git submodule update"
