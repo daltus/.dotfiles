@@ -62,3 +62,6 @@ try
   colorscheme solarized
 catch
 endtry
+
+" iTerm2 color 256 (https://www.iterm2.com/documentation-one-page.html)
+set t_Co=256
