@@ -2,6 +2,9 @@
 # .bashrc file is config for non-login, interactive shells
 
 
+# Editor of choice
+export EDITOR=vim
+
 # Aliases
 alias ~="cd ~"
 alias ..="cd .."
@@ -13,9 +16,6 @@ alias psdl="psd | less"
 alias c='clear'
 alias vims='vim -S'
 alias prettyjson='python_pretty_json'
-
-# Editor of choice
-export EDITOR=vim
 
 # git aliases
 alias glg="git log --oneline --all --graph --decorate"
@@ -30,9 +30,22 @@ alias gpsu="git pull && git submodule update"
 # git completion
 source ~/.dotfiles/git-completion.bash
 
-# git prompt __git_ps1
+# fancy git prompt __git_ps1, also has documentation for following GIT_PS1_* variables
 source ~/.dotfiles/git-prompt.sh
+# unstaged (*) and staged (+)
 export GIT_PS1_SHOWDIRTYSTATE=1
+# $ next to branch name
+export GIT_PS1_SHOWSTASHSTATE=1
+# % next to branch name
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+# see doc
+# export GIT_PS1_SHOWUPSTREAM="auto"
+# detached HEAD will have extra info about being relative to branch
+export GIT_PS1_DESCRIBE_STYLE="branch"
+# color hints, only available when using __git_ps1 for PROMPT_COMMAND, i.e. not PS1
+GIT_PS1_SHOWCOLORHINTS=1
+# hide git prompt if in a directory ignored by repo
+# GIT_PS1_HIDE_IF_PWD_IGNORED=1
 
 # helper functions
 function python_pretty_json() {
@@ -89,7 +102,10 @@ function parse_git_dirty {
 	fi
 }
 
+# commented out to use new git-prompt stuff from official git
 # export PS1="\[\e[32m\]\d\[\e[m\] \[\e[32m\]\t\[\e[m\] \[\e[31m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[34m\]:\[\e[m\]\w\[\e[35m\]\`parse_git_branch\`\[\e[m\] \\$ "
+
+# most of prompt is still from ezprompt.net
 export PS1="\[\e[32m\]\d\[\e[m\] \[\e[32m\]\t\[\e[m\] \[\e[31m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[34m\]:\[\e[m\]\w\[\e[35m\]\`(__git_ps1 \"(%s)\")\`\[\e[m\] \\$ "
 
 # end ezprompt.net #
