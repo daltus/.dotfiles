@@ -5,6 +5,11 @@
 # Editor of choice
 export EDITOR=vim
 
+# use 'type' builtin to see what an alias is
+# e.g.
+# $ type ls
+# ls is aliased to `ls -Gp'
+
 # Aliases
 alias ~="cd ~"
 alias ..="cd .."
