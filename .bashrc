@@ -29,6 +29,10 @@ alias gpsu="git pull && git submodule update"
 # git completion
 source ~/.dotfiles/git-completion.bash
 
+# git prompt __git_ps1
+source ~/.dotfiles/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+
 # helper functions
 function python_pretty_json() {
   cat $1 | python -m json.tool
@@ -84,7 +88,8 @@ function parse_git_dirty {
 	fi
 }
 
-export PS1="\[\e[32m\]\d\[\e[m\] \[\e[32m\]\t\[\e[m\] \[\e[31m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[34m\]:\[\e[m\]\w\[\e[35m\]\`parse_git_branch\`\[\e[m\] \\$ "
+# export PS1="\[\e[32m\]\d\[\e[m\] \[\e[32m\]\t\[\e[m\] \[\e[31m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[34m\]:\[\e[m\]\w\[\e[35m\]\`parse_git_branch\`\[\e[m\] \\$ "
+export PS1="\[\e[32m\]\d\[\e[m\] \[\e[32m\]\t\[\e[m\] \[\e[31m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\]\[\e[34m\]:\[\e[m\]\w\[\e[35m\]\`(__git_ps1 \"(%s)\")\`\[\e[m\] \\$ "
 
 # end ezprompt.net #
 ####################
