@@ -23,9 +23,9 @@ file=".vimrc"
 echo "Overwriting ~/$file"
 cp $file ~/$file
 
-file=".gitconfig"
-echo "Overwriting ~/$file"
-cp $file ~/$file
+# file=".gitconfig"
+# echo "Overwriting ~/$file"
+# cp $file ~/$file
 
 file=".bashrc"
 echo "Overwriting ~/$file"
