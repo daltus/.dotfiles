@@ -23,7 +23,9 @@ alias vims='vim -S'
 alias prettyjson='python_pretty_json'
 
 # git aliases
-alias glg="git log --oneline --branches --graph --decorate"
+alias gl="git log"
+alias glg="gl --oneline --branches --graph --decorate"
+alias glga="glg --all"
 alias gs="git status"
 alias gd="git diff"
 alias gb="git branch"
