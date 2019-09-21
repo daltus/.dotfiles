@@ -32,7 +32,8 @@ alias gb="git branch"
 alias gbs="gb --sort=committerdate" # ASC, negative committerdate for DESC
 alias gco="git checkout"
 alias gp="git pull"
-alias gpsu="git pull && git submodule update"
+alias gsu="git submodule update"
+alias gpsu="gp && gsu"
 
 # git completion
 source ~/.dotfiles/git-completion.bash
