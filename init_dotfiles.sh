@@ -8,8 +8,8 @@ if [ $curdir != ".dotfiles" ]
 		exit
 fi
 
-# Use files for git 2.20.1
-gitver="v2.20.1"
+# Use files for git 2.34.1
+gitver="v2.34.1"
 
 file="git-completion.bash"
 echo "curl'ing $file from master branch in git's github repo."
